@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arxis - Intranet Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">Staffbase</h1>
+                <div class="options-icon">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Richardson" class="avatar">
+                    <span class="status-indicator"></span>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Linda Richardson</h2>
+                    <p class="profile-title">Motion Designer</p>
+                    <span class="department-tag"><i class="fas fa-users"></i> Marketing Dept</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li class="nav-item">
+                        <i class="fas fa-building"></i>
+                        <span>Company</span>
+                        <span class="count"><span class="dot green-dot"></span>10</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-users"></i>
+                        <span>Teams & Community</span>
+                        <span class="count">14</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Calendar</span>
+                        <span class="count">6</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-comment"></i>
+                        <span>Messenger</span>
+                        <span class="count"><span class="dot green-dot"></span>15 <span class="secondary-count">106</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Task Manager</span>
+                        <span class="count"><span class="dot green-dot"></span>2 <span class="secondary-count red">20</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-folder"></i>
+                        <span>Documents</span>
+                        <span class="count">56</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="contacts-section">
+                <div class="contacts-header">
+                    <h3>Contacts <span>26</span></h3>
+                    <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+                </div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Dianne Rodriguez" class="contact-avatar">
+                        <div class="contact-info">
+                            <p class="contact-name">Dianne Rodriguez</p>
+                            <p class="contact-title">Product Owner</p>
+                        </div>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                    </li>
+                    <li class="contact-item">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="contact-avatar">
+                        <div class="contact-info">
+                            <p class="contact-name">Theresa von Castro</p>
+                            <p class="contact-title">Senior Product Designer</p>
+                        </div>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                    </li>
+                    <li class="contact-item">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Kristin Watson" class="contact-avatar">
+                        <div class="contact-info">
+                            <p class="contact-name">Kristin Watson</p>
+                            <p class="contact-title">Product Owner</p>
+                        </div>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                    </li>
+                    <li class="contact-item">
+                        <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Linda Fernandez" class="contact-avatar">
+                        <div class="contact-info">
+                            <p class="contact-name">Linda Fernandez</p>
+                            <p class="contact-title">Senior UX Architect</p>
+                        </div>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                    </li>
+                </ul>
+                <a href="#" class="view-all">View all</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Colleagues, projects, anything...">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="recent-task">
+                    <span>Recent</span>
+                    <span>Internal task</span>
+                </div>
+                <button class="create-new-btn">
+                    <i class="fas fa-plus"></i> Create new
+                </button>
+            </div>
+
+            <section class="stories-section">
+                <div class="section-header">
+                    <h2>Stories</h2>
+                    <a href="#" class="watch-all">Watch all</a>
+                </div>
+                <div class="stories-container">
+                    <div class="story add-story">
+                        <div class="story-avatar add-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p class="story-name">Add story</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/65.jpg')"></div>
+                        <p class="story-name">Dianne</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/72.jpg')"></div>
+                        <p class="story-name">Mafia Team</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/32.jpg')"></div>
+                        <p class="story-name">Kristin</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/lego/1.jpg')"></div>
+                        <p class="story-name">HR Dept</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                        <p class="story-name">Victor</p>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/89.jpg')"></div>
+                        <p class="story-name">Zarinka</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news-feed-section">
+                <div class="section-header">
+                    <h2>News feed <span>10</span></h2>
+                    <div class="feed-tabs">
+                        <button class="tab-btn popular-btn">Popular</button>
+                        <button class="tab-btn latest-btn active">Latest</button>
+                    </div>
+                </div>
+
+                <div class="feed-container">
+                    <div class="feed-item large">
+                        <div class="feed-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
+                                <div class="post-info">
+                                    <p class="user-name">Zarinka Van Hochland</p>
+                                    <p class="post-time">Today, 34 min ago</p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <span class="comment-count"><i class="far fa-comment"></i> 6</span>
+                                <span class="like-count"><i class="far fa-heart"></i> 51</span>
+                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                        <div class="feed-content">
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Singapore coworking space" class="feed-image">
+                            <h3 class="feed-title">Our new coworking in Singapore</h3>
+                            <p class="feed-text">New workspace in Singapore completed and open now. Come and leave a feedback!</p>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="user-avatar">
+                                <div class="post-info">
+                                    <p class="user-name">Theresa von Castro</p>
+                                    <p class="post-time">Today, 3 hrs ago</p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <span class="comment-count"><i class="far fa-comment"></i> 23</span>
+                                <span class="like-count"><i class="far fa-heart"></i> 254</span>
+                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                        <div class="feed-content">
+                            <img src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Halloween party" class="feed-image">
+                            <h3 class="feed-title">Halloween Trick-or-treating party</h3>
+                            <p class="feed-text">Some pics from the scariest teambuilding party of this year in the Los Angeles campus... <a href="#" class="read-more">read more</a></p>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="user-avatar">
+                                <div class="post-info">
+                                    <p class="user-name">User Name</p>
+                                    <p class="post-time">Today, 5 hrs ago</p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <span class="comment-count"><i class="far fa-comment"></i> 8</span>
+                                <span class="like-count"><i class="far fa-heart"></i> 76</span>
+                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                        <div class="feed-content">
+                            <div class="image-grid">
+                                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Office image 1" class="feed-image">
+                                <div class="image-count">+12</div>
+                            </div>
+                            <h3 class="feed-title">Office Updates</h3>
+                            <p class="feed-text">Check out our new office space renovations...</p>
+                        </div>
+                    </div>
+
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="User" class="user-avatar">
+                                <div class="post-info">
+                                    <p class="user-name">Another User</p>
+                                    <p class="post-time">Yesterday</p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <span class="comment-count"><i class="far fa-comment"></i> 4</span>
+                                <span class="like-count"><i class="far fa-heart"></i> 31</span>
+                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                        <div class="feed-content">
+                            <div class="feed-image-container">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Team meeting" class="feed-image">
+                                <div class="heart-overlay"><i class="fas fa-heart"></i></div>
+                            </div>
+                            <h3 class="feed-title">Team Meeting</h3>
+                            <p class="feed-text">Productive discussions at our weekly team meeting...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Panel -->
+        <aside class="right-panel">
+            <div class="panel-header">
+                <div class="date-info">
+                    <p class="today">Today</p>
+                    <p class="date-time">Dec 10 12:25 am</p>
+                </div>
+                <div class="notification-bell">
+                    <i class="far fa-bell"></i>
+                </div>
+            </div>
+
+            <div class="calendar-widget">
+                <div class="weekday-header">
+                    <span>SU</span>
+                    <span>MO</span>
+                    <span>TU</span>
+                    <span>WE</span>
+                    <span>TH</span>
+                    <span>FR</span>
+                    <span>SA</span>
+                </div>
+                <div class="calendar-grid">
+                    <span class="date prev-month">28</span>
+                    <span class="date prev-month">29</span>
+                    <span class="date prev-month">30</span>
+                    <span class="date">01</span>
+                    <span class="date">02</span>
+                    <span class="date">03</span>
+                    <span class="date">04</span>
+                    <span class="date">05</span>
+                    <span class="date">06</span>
+                    <span class="date">07</span>
+                    <span class="date">08</span>
+                    <span class="date">09</span>
+                    <span class="date current">10</span>
+                    <span class="date">11</span>
+                    <span class="date">12</span>
+                    <span class="date">13</span>
+                    <span class="date event">14</span>
+                    <span class="date event">15</span>
+                    <span class="date">16</span>
+                    <span class="date">17</span>
+                    <span class="date">18</span>
+                    <span class="date">19</span>
+                    <span class="date">20</span>
+                    <span class="date event">21</span>
+                    <span class="date">22</span>
+                    <span class="date">23</span>
+                    <span class="date">24</span>
+                    <span class="date">25</span>
+                    <span class="date">26</span>
+                    <span class="date">27</span>
+                    <span class="date">28</span>
+                    <span class="date">29</span>
+                    <span class="date">30</span>
+                    <span class="date">31</span>
+                    <span class="date next-month">01</span>
+                </div>
+            </div>
+
+            <div class="todo-section">
+                <div class="todo-header">
+                    <h3>To Do <span class="today-label">Today</span> <span class="todo-count">2/5</span></h3>
+                    <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+                </div>
+                <ul class="todo-list">
+                    <li class="todo-item">
+                        <input type="checkbox" id="todo1">
+                        <label for="todo1">1-to-1 with Helena Fernandez</label>
+                    </li>
+                    <li class="todo-item completed">
+                        <input type="checkbox" id="todo2" checked>
+                        <label for="todo2">Drop Story in Community</label>
+                    </li>
+                    <li class="todo-item completed">
+                        <input type="checkbox" id="todo3" checked>
+                        <label for="todo3">Final design of a personal account demo presentation</label>
+                    </li>
+                    <li class="todo-item">
+                        <input type="checkbox" id="todo4">
+                        <label for="todo4">Workshop feat. Weimar dept</label>
+                    </li>
+                    <li class="todo-item">
+                        <input type="checkbox" id="todo5">
+                        <label for="todo5">Clean up DS library archive</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="evaluation-widget">
+                <div class="evaluation-content">
+                    <p class="evaluation-title">Until the quarterly evaluation of designers</p>
+                    <p class="days-count">10 days</p>
+                    <div class="evaluation-graphic">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Evaluation graphic" class="evaluation-image">
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-links">
+                <div class="links-row">
+                    <a href="#">About</a>
+                    <a href="#">Support Center</a>
+                    <a href="#">Media sources</a>
+                </div>
+                <div class="links-row">
+                    <a href="#">FAQ</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Privacy and Terms</a>
+                </div>
+                <div class="links-row">
+                    <a href="#">Business Services</a>
+                </div>
+            </footer>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
