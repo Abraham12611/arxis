@@ -12,7 +12,9 @@
         <!-- Left Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h1 class="logo">Staffbase</h1>
+                <div class="logo">
+                    <img src="public/arxis.svg" alt="arxis logo" class="logo-img">
+                </div>
                 <div class="options-icon">
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
@@ -47,10 +49,14 @@
                         <span>Calendar</span>
                         <span class="count">6</span>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="messenger-nav">
                         <i class="fas fa-comment"></i>
                         <span>Messenger</span>
-                        <span class="count"><span class="dot green-dot"></span>15 <span class="secondary-count">106</span></span>
+                        <span class="count">
+                            <span class="dot green-dot" style="display: none;"></span>
+                            <span class="unread-count"></span>
+                            <span class="secondary-count">106</span>
+                        </span>
                     </li>
                     <li class="nav-item">
                         <i class="fas fa-check-circle"></i>
@@ -178,21 +184,21 @@
                 </div>
 
                 <div class="feed-container">
-                    <div class="feed-item large">
-                        <div class="feed-header">
-                            <div class="user-info">
-                                <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
-                                <div class="post-info">
-                                    <p class="user-name">Zarinka Van Hochland</p>
-                                    <p class="post-time">Today, 34 min ago</p>
-                                </div>
-                            </div>
-                            <div class="post-actions">
-                                <span class="comment-count"><i class="far fa-comment"></i> 6</span>
-                                <span class="like-count"><i class="far fa-heart"></i> 51</span>
-                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                                    <div class="feed-item large" data-post-id="1">
+                    <div class="feed-header">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
+                            <div class="post-info">
+                                <p class="user-name">Zarinka Van Hochland</p>
+                                <p class="post-time">Today, 34 min ago</p>
                             </div>
                         </div>
+                        <div class="post-actions">
+                            <button class="comment-btn" data-count="6"><i class="far fa-comment"></i> <span class="count">6</span></button>
+                            <button class="like-btn" data-count="51"><i class="far fa-heart"></i> <span class="count">51</span></button>
+                            <button class="more-options"><i class="fas fa-ellipsis"></i></button>
+                        </div>
+                    </div>
                         <div class="feed-content">
                             <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Singapore coworking space" class="feed-image">
                             <h3 class="feed-title">Our new coworking in Singapore</h3>
@@ -200,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="2">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="user-avatar">
@@ -210,8 +216,8 @@
                                 </div>
                             </div>
                             <div class="post-actions">
-                                <span class="comment-count"><i class="far fa-comment"></i> 23</span>
-                                <span class="like-count"><i class="far fa-heart"></i> 254</span>
+                                <button class="comment-btn" data-count="23"><i class="far fa-comment"></i> <span class="count">23</span></button>
+                                <button class="like-btn" data-count="254"><i class="far fa-heart"></i> <span class="count">254</span></button>
                                 <button class="more-options"><i class="fas fa-ellipsis"></i></button>
                             </div>
                         </div>
@@ -222,7 +228,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="3">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="user-avatar">
@@ -232,8 +238,8 @@
                                 </div>
                             </div>
                             <div class="post-actions">
-                                <span class="comment-count"><i class="far fa-comment"></i> 8</span>
-                                <span class="like-count"><i class="far fa-heart"></i> 76</span>
+                                <button class="comment-btn" data-count="8"><i class="far fa-comment"></i> <span class="count">8</span></button>
+                                <button class="like-btn" data-count="76"><i class="far fa-heart"></i> <span class="count">76</span></button>
                                 <button class="more-options"><i class="fas fa-ellipsis"></i></button>
                             </div>
                         </div>
@@ -247,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="4">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="User" class="user-avatar">
@@ -257,8 +263,8 @@
                                 </div>
                             </div>
                             <div class="post-actions">
-                                <span class="comment-count"><i class="far fa-comment"></i> 4</span>
-                                <span class="like-count"><i class="far fa-heart"></i> 31</span>
+                                <button class="comment-btn" data-count="4"><i class="far fa-comment"></i> <span class="count">4</span></button>
+                                <button class="like-btn" data-count="31"><i class="far fa-heart"></i> <span class="count">31</span></button>
                                 <button class="more-options"><i class="fas fa-ellipsis"></i></button>
                             </div>
                         </div>
@@ -394,5 +400,9 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="newsfeed-interactions.js"></script>
+    <script src="chat-system.js"></script>
+    <script src="message-automation.js"></script>
+    <link rel="stylesheet" href="chat.css">
 </body>
 </html>
