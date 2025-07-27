@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Story data
+    // Story data.
     const stories = [
         {
             id: 'story-1',

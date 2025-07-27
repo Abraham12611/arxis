@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 // Serve static files
 app.use(express.static('./'));
 
-// Serve index.html for the root route
+// Serve index.html for the root route.
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });

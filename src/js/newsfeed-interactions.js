@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Store post interaction states
     const postStates = {};
 
-    // Initialize post states
+    // Initialize post states.
     document.querySelectorAll('.feed-item').forEach(post => {
         const postId = post.dataset.postId;
         const likeBtn = post.querySelector('.like-btn');

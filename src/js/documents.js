@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Document Manager data
+    // Document Manager data.
     const documentData = {
         stats: {
             totalFiles: 156,

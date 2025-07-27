@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Chat system data
+    // Chat system data.
     const contacts = [
         {
             id: 1,

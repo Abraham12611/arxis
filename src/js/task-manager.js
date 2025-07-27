@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Task Manager data
+    // Task Manager data.
     const taskData = {
         tasks: [
             {

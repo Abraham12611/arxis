@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Teams & Community data
+    // Teams & Community data.
     const teamsData = {
         stats: {
             activeTeams: 24,

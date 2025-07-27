@@ -930,7 +930,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Department View Functions
+    // Department View Functions.
     function setupDepartmentView() {
         const orgChartBtn = document.querySelector('.org-chart-btn');
         const gridViewBtn = document.querySelector('.grid-view-btn');

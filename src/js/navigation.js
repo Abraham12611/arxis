@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             switchToSection('company-section');
         });
 
-        // Make Task Manager nav item clickable
+        // Make Task Manager nav item clickable.
         const taskManagerNavItem = document.querySelector('.nav-item:nth-child(5)');
         if (taskManagerNavItem) {
             taskManagerNavItem.style.cursor = 'pointer';

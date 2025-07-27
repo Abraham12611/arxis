@@ -185,7 +185,7 @@ const companyData = {
 
     // News & Updates
     news: {
-        // Featured news (most important/recent)
+        // Featured news (most important/recent.)
         featured: {
             id: "news-001",
             title: "arxis Expands to New European Markets",

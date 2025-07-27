@@ -1,6 +1,6 @@
 // DOM Elements
 document.addEventListener('DOMContentLoaded', function() {
-    // Tab switching functionality
+    // Tab switching functionality.
     const popularBtn = document.querySelector('.popular-btn');
     const latestBtn = document.querySelector('.latest-btn');
 

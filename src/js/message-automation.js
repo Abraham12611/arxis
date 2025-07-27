@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Wait for chat system to be initialized
+    // Wait for chat system to be initialized.
     setTimeout(() => {
         if (!window.chatSystem) {
             console.error('Chat system not initialized');
