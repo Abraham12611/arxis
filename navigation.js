@@ -14,6 +14,33 @@ document.addEventListener('DOMContentLoaded', function() {
             switchToSection('company-section');
         });
 
+        // Make Task Manager nav item clickable
+        const taskManagerNavItem = document.querySelector('.nav-item:nth-child(5)');
+        if (taskManagerNavItem) {
+            taskManagerNavItem.style.cursor = 'pointer';
+            taskManagerNavItem.addEventListener('click', function() {
+                switchToSection('task-manager-section');
+            });
+        }
+
+        // Make Teams & Community nav item clickable
+        const teamsNavItem = document.querySelector('.nav-item:nth-child(2)');
+        if (teamsNavItem) {
+            teamsNavItem.style.cursor = 'pointer';
+            teamsNavItem.addEventListener('click', function() {
+                switchToSection('teams-community-section');
+            });
+        }
+
+        // Make Documents nav item clickable
+        const documentsNavItem = document.querySelector('.nav-item:nth-child(6)');
+        if (documentsNavItem) {
+            documentsNavItem.style.cursor = 'pointer';
+            documentsNavItem.addEventListener('click', function() {
+                switchToSection('documents-section');
+            });
+        }
+
         // Add back button event listener
         const backToFeedBtn = document.getElementById('backToFeedBtn');
         if (backToFeedBtn) {
@@ -32,31 +59,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Switch between main sections (feed vs company)
+    // Switch between main sections (feed vs company vs task-manager vs documents vs teams-community)
     function switchToSection(sectionId) {
         const mainFeed = document.querySelector('.news-feed-section');
         const companySection = document.getElementById('companySection');
+        const taskManagerSection = document.getElementById('taskManagerSection');
+        const documentsSection = document.getElementById('documentsSection');
+        const teamsCommunitySection = document.getElementById('teamsCommunitySection');
         const storiesSection = document.querySelector('.stories-section');
 
         // Update navigation state
         navState.currentSection = sectionId;
 
-        if (sectionId === 'company-section') {
-            // Hide feed, show company section
-            mainFeed.style.display = 'none';
-            companySection.style.display = 'block';
-            storiesSection.style.display = 'none';
+        // Hide all sections first
+        mainFeed.style.display = 'none';
+        companySection.style.display = 'none';
+        taskManagerSection.style.display = 'none';
+        documentsSection.style.display = 'none';
+        teamsCommunitySection.style.display = 'none';
+        storiesSection.style.display = 'none';
 
-            // Highlight Company nav item
-            updateActiveNavItem('company');
-        } else {
-            // Show feed, hide company section
-            mainFeed.style.display = 'block';
-            companySection.style.display = 'none';
-            storiesSection.style.display = 'block';
-
-            // Remove highlight from Company nav item
-            updateActiveNavItem(null);
+        // Show the selected section
+        switch (sectionId) {
+            case 'company-section':
+                companySection.style.display = 'block';
+                updateActiveNavItem('company');
+                break;
+            case 'task-manager-section':
+                taskManagerSection.style.display = 'block';
+                updateActiveNavItem('task-manager');
+                break;
+            case 'documents-section':
+                documentsSection.style.display = 'block';
+                updateActiveNavItem('documents');
+                break;
+            case 'teams-community-section':
+                teamsCommunitySection.style.display = 'block';
+                updateActiveNavItem('teams');
+                break;
+            case 'main-feed':
+            default:
+                mainFeed.style.display = 'block';
+                storiesSection.style.display = 'block';
+                updateActiveNavItem(null);
+                break;
         }
     }
 
@@ -65,13 +111,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const navItems = document.querySelectorAll('.nav-item');
 
         navItems.forEach((item, index) => {
+            // Remove active class from all nav items
+            item.classList.remove('active-nav-item');
+
+            // Add active class to the selected nav item
             if ((activeItemId === 'company' && index === 0) ||
                 (activeItemId === 'teams' && index === 1) ||
                 (activeItemId === 'calendar' && index === 2) ||
-                (activeItemId === 'messenger' && index === 3)) {
+                (activeItemId === 'messenger' && index === 3) ||
+                (activeItemId === 'task-manager' && index === 4) ||
+                (activeItemId === 'documents' && index === 5)) {
                 item.classList.add('active-nav-item');
-            } else {
-                item.classList.remove('active-nav-item');
             }
         });
     }
