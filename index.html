@@ -710,6 +710,1478 @@
                 </div>
             </section>
 
+            <!-- Task Manager Section -->
+            <section id="taskManagerSection" class="task-manager-section">
+                <!-- Header Section -->
+                <div class="task-header">
+                    <div class="task-title-stats">
+                        <h2>Task Manager</h2>
+                        <div class="task-stats">
+                            <div class="task-stat">
+                                <span class="stat-number">42</span>
+                                <span class="stat-label">Total</span>
+                            </div>
+                            <div class="task-stat">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Completed</span>
+                            </div>
+                            <div class="task-stat">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Pending</span>
+                            </div>
+                            <div class="task-stat">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Overdue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-filters">
+                        <div class="filter-tabs">
+                            <button class="filter-tab active" data-filter="all">All Tasks</button>
+                            <button class="filter-tab" data-filter="my">My Tasks</button>
+                            <button class="filter-tab" data-filter="assigned">Assigned by Me</button>
+                            <button class="filter-tab" data-filter="team">Team Tasks</button>
+                        </div>
+                        <div class="task-actions">
+                            <select class="task-sort">
+                                <option value="due-date">Due Date</option>
+                                <option value="priority">Priority</option>
+                                <option value="created">Created Date</option>
+                                <option value="alphabetical">Alphabetical</option>
+                            </select>
+                            <button class="create-task-btn">
+                                <i class="fas fa-plus"></i> Create New Task
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Dashboard -->
+                <div class="task-dashboard">
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-calendar-day"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Today's Tasks</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 40%"></div>
+                                <span class="progress-text">2/5</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-calendar-week"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">This Week</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 25%"></div>
+                                <span class="progress-text">3/12</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon overdue"><i class="fas fa-exclamation-circle"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Overdue</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar overdue" style="width: 100%"></div>
+                                <span class="progress-text">4 tasks</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon completed"><i class="fas fa-check-circle"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">18</span>
+                                <span class="stat-label">Completed</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar completed" style="width: 100%"></div>
+                                <span class="progress-text">This Month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-charts">
+                        <div class="priority-distribution">
+                            <h3>Priority Distribution</h3>
+                            <div class="priority-chart">
+                                <div class="priority-bar high" style="height: 60%">
+                                    <span class="priority-count">12</span>
+                                </div>
+                                <div class="priority-bar medium" style="height: 80%">
+                                    <span class="priority-count">16</span>
+                                </div>
+                                <div class="priority-bar low" style="height: 40%">
+                                    <span class="priority-count">8</span>
+                                </div>
+                            </div>
+                            <div class="priority-labels">
+                                <span class="priority-label high">High</span>
+                                <span class="priority-label medium">Medium</span>
+                                <span class="priority-label low">Low</span>
+                            </div>
+                        </div>
+                        <div class="project-progress">
+                            <h3>Project Progress</h3>
+                            <div class="project-list">
+                                <div class="project-item">
+                                    <div class="project-info">
+                                        <span class="project-name">Website Redesign</span>
+                                        <span class="project-percentage">75%</span>
+                                    </div>
+                                    <div class="project-progress-bar">
+                                        <div class="progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="project-info">
+                                        <span class="project-name">Mobile App Development</span>
+                                        <span class="project-percentage">40%</span>
+                                    </div>
+                                    <div class="project-progress-bar">
+                                        <div class="progress" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="project-info">
+                                        <span class="project-name">Brand Guidelines</span>
+                                        <span class="project-percentage">90%</span>
+                                    </div>
+                                    <div class="project-progress-bar">
+                                        <div class="progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View Toggle -->
+                <div class="view-toggle">
+                    <button class="view-btn list-view-btn active">
+                        <i class="fas fa-list"></i> List View
+                    </button>
+                    <button class="view-btn kanban-view-btn">
+                        <i class="fas fa-columns"></i> Kanban Board
+                    </button>
+                </div>
+
+                <!-- Task List View -->
+                <div class="task-list-view">
+                    <div class="task-item" draggable="true">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task1">
+                            <label for="task1"></label>
+                        </div>
+                        <div class="task-content">
+                            <div class="task-header">
+                                <h3 class="task-title">Update homepage hero section with new imagery</h3>
+                                <div class="task-priority high">High</div>
+                            </div>
+                            <p class="task-description">Replace the current hero image with the new approved brand photography and update the headline text.</p>
+                            <div class="task-meta">
+                                <div class="task-assignee">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Richardson">
+                                    <span>Linda Richardson</span>
+                                </div>
+                                <div class="task-due-date">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Today, 5:00 PM</span>
+                                </div>
+                                <div class="task-status pending">In Progress</div>
+                                <div class="task-progress">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-actions">
+                            <button class="task-action-btn edit-task"><i class="fas fa-edit"></i></button>
+                            <button class="task-action-btn comment-task"><i class="far fa-comment"></i> <span class="count">3</span></button>
+                            <button class="task-action-btn assign-task"><i class="fas fa-user-plus"></i></button>
+                            <button class="task-action-btn delete-task"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="expand-task">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-item" draggable="true">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task2">
+                            <label for="task2"></label>
+                        </div>
+                        <div class="task-content">
+                            <div class="task-header">
+                                <h3 class="task-title">Create social media graphics for product launch</h3>
+                                <div class="task-priority medium">Medium</div>
+                            </div>
+                            <p class="task-description">Design a set of social media graphics for Instagram, Facebook, and Twitter to promote the new product launch.</p>
+                            <div class="task-meta">
+                                <div class="task-assignee">
+                                    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro">
+                                    <span>Theresa von Castro</span>
+                                </div>
+                                <div class="task-due-date">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Tomorrow, 12:00 PM</span>
+                                </div>
+                                <div class="task-status pending">Not Started</div>
+                                <div class="task-progress">
+                                    <div class="progress-bar" style="width: 0%"></div>
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-actions">
+                            <button class="task-action-btn edit-task"><i class="fas fa-edit"></i></button>
+                            <button class="task-action-btn comment-task"><i class="far fa-comment"></i> <span class="count">0</span></button>
+                            <button class="task-action-btn assign-task"><i class="fas fa-user-plus"></i></button>
+                            <button class="task-action-btn delete-task"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="expand-task">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-item" draggable="true">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task3" checked>
+                            <label for="task3"></label>
+                        </div>
+                        <div class="task-content completed">
+                            <div class="task-header">
+                                <h3 class="task-title">Review and approve Q3 marketing budget</h3>
+                                <div class="task-priority high">High</div>
+                            </div>
+                            <p class="task-description">Review the proposed Q3 marketing budget and provide approval or feedback.</p>
+                            <div class="task-meta">
+                                <div class="task-assignee">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                                    <span>Michael Chen</span>
+                                </div>
+                                <div class="task-due-date">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Yesterday</span>
+                                </div>
+                                <div class="task-status completed">Completed</div>
+                                <div class="task-progress">
+                                    <div class="progress-bar completed" style="width: 100%"></div>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-actions">
+                            <button class="task-action-btn edit-task"><i class="fas fa-edit"></i></button>
+                            <button class="task-action-btn comment-task"><i class="far fa-comment"></i> <span class="count">5</span></button>
+                            <button class="task-action-btn assign-task"><i class="fas fa-user-plus"></i></button>
+                            <button class="task-action-btn delete-task"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="expand-task">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-item overdue" draggable="true">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task4">
+                            <label for="task4"></label>
+                        </div>
+                        <div class="task-content">
+                            <div class="task-header">
+                                <h3 class="task-title">Finalize copy for email newsletter</h3>
+                                <div class="task-priority high">High</div>
+                            </div>
+                            <p class="task-description">Review and finalize the copy for the monthly email newsletter that will go out to all subscribers.</p>
+                            <div class="task-meta">
+                                <div class="task-assignee">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Kristin Watson">
+                                    <span>Kristin Watson</span>
+                                </div>
+                                <div class="task-due-date overdue">
+                                    <i class="far fa-calendar"></i>
+                                    <span>2 days ago</span>
+                                </div>
+                                <div class="task-status overdue">Overdue</div>
+                                <div class="task-progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-actions">
+                            <button class="task-action-btn edit-task"><i class="fas fa-edit"></i></button>
+                            <button class="task-action-btn comment-task"><i class="far fa-comment"></i> <span class="count">2</span></button>
+                            <button class="task-action-btn assign-task"><i class="fas fa-user-plus"></i></button>
+                            <button class="task-action-btn delete-task"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="expand-task">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanban Board View (hidden by default) -->
+                <div class="kanban-view" style="display: none;">
+                    <div class="kanban-column">
+                        <div class="kanban-column-header">
+                            <h3>To Do</h3>
+                            <span class="task-count">8</span>
+                        </div>
+                        <div class="kanban-tasks">
+                            <div class="kanban-task" draggable="true">
+                                <div class="task-priority medium"></div>
+                                <h4>Create social media graphics for product launch</h4>
+                                <p>Design a set of social media graphics for Instagram, Facebook, and Twitter.</p>
+                                <div class="task-meta">
+                                    <div class="due-date">Tomorrow</div>
+                                    <div class="assignee">
+                                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-task" draggable="true">
+                                <div class="task-priority low"></div>
+                                <h4>Update team meeting agenda</h4>
+                                <p>Prepare agenda for next week's team meeting.</p>
+                                <div class="task-meta">
+                                    <div class="due-date">Friday</div>
+                                    <div class="assignee">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Richardson">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kanban-column">
+                        <div class="kanban-column-header">
+                            <h3>In Progress</h3>
+                            <span class="task-count">3</span>
+                        </div>
+                        <div class="kanban-tasks">
+                            <div class="kanban-task" draggable="true">
+                                <div class="task-priority high"></div>
+                                <h4>Update homepage hero section</h4>
+                                <p>Replace the current hero image with the new approved brand photography.</p>
+                                <div class="task-meta">
+                                    <div class="due-date">Today</div>
+                                    <div class="assignee">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Richardson">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kanban-column">
+                        <div class="kanban-column-header">
+                            <h3>Review</h3>
+                            <span class="task-count">2</span>
+                        </div>
+                        <div class="kanban-tasks">
+                            <div class="kanban-task overdue" draggable="true">
+                                <div class="task-priority high"></div>
+                                <h4>Finalize copy for email newsletter</h4>
+                                <p>Review and finalize the copy for the monthly email newsletter.</p>
+                                <div class="task-meta">
+                                    <div class="due-date overdue">2 days ago</div>
+                                    <div class="assignee">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Kristin Watson">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kanban-column">
+                        <div class="kanban-column-header">
+                            <h3>Completed</h3>
+                            <span class="task-count">18</span>
+                        </div>
+                        <div class="kanban-tasks">
+                            <div class="kanban-task completed" draggable="true">
+                                <div class="task-priority high"></div>
+                                <h4>Review and approve Q3 marketing budget</h4>
+                                <p>Review the proposed Q3 marketing budget and provide approval or feedback.</p>
+                                <div class="task-meta">
+                                    <div class="due-date">Yesterday</div>
+                                    <div class="assignee">
+                                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Creation Modal -->
+                <div class="task-modal" style="display: none;">
+                    <div class="task-modal-content">
+                        <div class="modal-header">
+                            <h2>Create New Task</h2>
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                        </div>
+                        <form class="task-form">
+                            <div class="form-group">
+                                <label for="taskTitle">Task Title</label>
+                                <input type="text" id="taskTitle" placeholder="Enter task title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskDescription">Description</label>
+                                <textarea id="taskDescription" placeholder="Enter task description" rows="3"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="taskAssignee">Assignee</label>
+                                    <select id="taskAssignee">
+                                        <option value="">Select assignee</option>
+                                        <option value="1">Linda Richardson</option>
+                                        <option value="2">Theresa von Castro</option>
+                                        <option value="3">Kristin Watson</option>
+                                        <option value="4">Michael Chen</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskDueDate">Due Date</label>
+                                    <input type="date" id="taskDueDate">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="taskPriority">Priority</label>
+                                    <select id="taskPriority">
+                                        <option value="low">Low</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="high">High</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskProject">Project</label>
+                                    <select id="taskProject">
+                                        <option value="">Select project</option>
+                                        <option value="1">Website Redesign</option>
+                                        <option value="2">Mobile App Development</option>
+                                        <option value="3">Brand Guidelines</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskTags">Tags</label>
+                                <input type="text" id="taskTags" placeholder="Add tags separated by commas">
+                            </div>
+                            <div class="form-group">
+                                <label>Subtasks</label>
+                                <div class="subtasks-container">
+                                    <div class="subtask-item">
+                                        <input type="text" placeholder="Enter subtask">
+                                        <button type="button" class="remove-subtask"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" class="add-subtask-btn"><i class="fas fa-plus"></i> Add Subtask</button>
+                            </div>
+                            <div class="form-group">
+                                <label>Attachments</label>
+                                <div class="attachment-upload">
+                                    <input type="file" id="taskAttachment" multiple hidden>
+                                    <label for="taskAttachment" class="upload-area">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Drag files here or click to upload</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <div class="template-option">
+                                    <input type="checkbox" id="saveTemplate">
+                                    <label for="saveTemplate">Save as template</label>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="cancel-btn">Cancel</button>
+                                    <button type="submit" class="save-btn">Create Task</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Documents Section -->
+            <section id="documentsSection" class="documents-section">
+                <!-- Header Section -->
+                <div class="documents-header">
+                    <div class="documents-title-stats">
+                        <h2>Documents</h2>
+                        <div class="documents-stats">
+                            <div class="doc-stat">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Total Files</span>
+                            </div>
+                            <div class="doc-stat">
+                                <span class="stat-number">2.4</span>
+                                <span class="stat-label">GB Used</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="documents-actions">
+                        <div class="documents-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search documents...">
+                            <button class="advanced-search-btn"><i class="fas fa-sliders-h"></i></button>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="view-btn grid-view-btn active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn list-view-btn">
+                                <i class="fas fa-list"></i>
+                            </button>
+                            <button class="view-btn timeline-view-btn">
+                                <i class="fas fa-stream"></i>
+                            </button>
+                        </div>
+                        <div class="document-actions">
+                            <button class="upload-btn">
+                                <i class="fas fa-upload"></i> Upload
+                            </button>
+                            <div class="create-new-dropdown">
+                                <button class="create-new-btn">
+                                    <i class="fas fa-plus"></i> Create New
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#"><i class="fas fa-folder"></i> New Folder</a>
+                                    <a href="#"><i class="fas fa-file-alt"></i> New Document</a>
+                                    <a href="#"><i class="fas fa-file-powerpoint"></i> New Presentation</a>
+                                    <a href="#"><i class="fas fa-file-excel"></i> New Spreadsheet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Documents Area -->
+                <div class="documents-main">
+                    <!-- Navigation Sidebar -->
+                    <div class="documents-sidebar">
+                        <div class="quick-access">
+                            <h3>Quick Access</h3>
+                            <ul class="quick-access-list">
+                                <li class="active"><i class="fas fa-clock"></i> Recent</li>
+                                <li><i class="fas fa-share-alt"></i> Shared with Me</li>
+                                <li><i class="fas fa-file"></i> My Documents</li>
+                                <li><i class="fas fa-users"></i> Team Folders</li>
+                                <li><i class="fas fa-star"></i> Favorites</li>
+                                <li><i class="fas fa-trash"></i> Trash</li>
+                            </ul>
+                        </div>
+                        <div class="folder-tree">
+                            <h3>Folders</h3>
+                            <ul class="folder-list">
+                                <li class="folder">
+                                    <div class="folder-item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <i class="fas fa-folder"></i>
+                                        <span>Marketing</span>
+                                    </div>
+                                    <ul class="subfolder-list">
+                                        <li><i class="fas fa-folder"></i> Campaigns</li>
+                                        <li><i class="fas fa-folder"></i> Brand Assets</li>
+                                    </ul>
+                                </li>
+                                <li class="folder">
+                                    <div class="folder-item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <i class="fas fa-folder"></i>
+                                        <span>Product Development</span>
+                                    </div>
+                                </li>
+                                <li class="folder">
+                                    <div class="folder-item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <i class="fas fa-folder"></i>
+                                        <span>HR Documents</span>
+                                    </div>
+                                </li>
+                                <li class="folder">
+                                    <div class="folder-item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <i class="fas fa-folder"></i>
+                                        <span>Finance</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="storage-usage">
+                            <h3>Storage</h3>
+                            <div class="usage-bar">
+                                <div class="used" style="width: 65%;"></div>
+                            </div>
+                            <div class="usage-stats">
+                                <span>2.4 GB used</span>
+                                <span>1.6 GB free</span>
+                            </div>
+                            <button class="upgrade-storage-btn">Upgrade Storage</button>
+                        </div>
+                    </div>
+
+                    <!-- Document Content Area -->
+                    <div class="documents-content">
+                        <div class="documents-path">
+                            <span>Home</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Recent</span>
+                        </div>
+
+                        <!-- Grid View -->
+                        <div class="documents-grid">
+                            <div class="document-card folder">
+                                <div class="doc-icon">
+                                    <i class="fas fa-folder"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Project X</h4>
+                                    <span>12 items</span>
+                                </div>
+                            </div>
+                            <div class="document-card">
+                                <div class="doc-icon pdf">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Q3 Report.pdf</h4>
+                                    <span>2.5 MB • Yesterday</span>
+                                </div>
+                                <div class="doc-actions">
+                                    <button><i class="fas fa-download"></i></button>
+                                    <button><i class="fas fa-share-alt"></i></button>
+                                    <button><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </div>
+                            <div class="document-card">
+                                <div class="doc-icon doc">
+                                    <i class="fas fa-file-word"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Meeting Notes.docx</h4>
+                                    <span>342 KB • 2 days ago</span>
+                                </div>
+                                <div class="doc-actions">
+                                    <button><i class="fas fa-download"></i></button>
+                                    <button><i class="fas fa-share-alt"></i></button>
+                                    <button><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </div>
+                            <div class="document-card">
+                                <div class="doc-icon ppt">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Client Presentation.pptx</h4>
+                                    <span>5.2 MB • 3 days ago</span>
+                                </div>
+                                <div class="doc-actions">
+                                    <button><i class="fas fa-download"></i></button>
+                                    <button><i class="fas fa-share-alt"></i></button>
+                                    <button><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </div>
+                            <div class="document-card">
+                                <div class="doc-icon img">
+                                    <i class="fas fa-file-image"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Logo Design.png</h4>
+                                    <span>1.8 MB • 1 week ago</span>
+                                </div>
+                                <div class="doc-actions">
+                                    <button><i class="fas fa-download"></i></button>
+                                    <button><i class="fas fa-share-alt"></i></button>
+                                    <button><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </div>
+                            <div class="document-card">
+                                <div class="doc-icon xls">
+                                    <i class="fas fa-file-excel"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Budget Forecast.xlsx</h4>
+                                    <span>756 KB • 1 week ago</span>
+                                </div>
+                                <div class="doc-actions">
+                                    <button><i class="fas fa-download"></i></button>
+                                    <button><i class="fas fa-share-alt"></i></button>
+                                    <button><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- List View (hidden by default) -->
+                        <div class="documents-list" style="display: none;">
+                            <table class="documents-table">
+                                <thead>
+                                    <tr>
+                                        <th class="checkbox-col"><input type="checkbox"></th>
+                                        <th class="name-col">Name <i class="fas fa-sort"></i></th>
+                                        <th class="owner-col">Owner</th>
+                                        <th class="modified-col">Last Modified <i class="fas fa-sort-down"></i></th>
+                                        <th class="size-col">Size <i class="fas fa-sort"></i></th>
+                                        <th class="actions-col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="folder-row">
+                                        <td><input type="checkbox"></td>
+                                        <td>
+                                            <div class="file-info">
+                                                <i class="fas fa-folder"></i>
+                                                <span>Project X</span>
+                                            </div>
+                                        </td>
+                                        <td>You</td>
+                                        <td>Yesterday, 2:30 PM</td>
+                                        <td>12 items</td>
+                                        <td class="actions">
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>
+                                            <div class="file-info">
+                                                <i class="fas fa-file-pdf"></i>
+                                                <span>Q3 Report.pdf</span>
+                                            </div>
+                                        </td>
+                                        <td>Michael Chen</td>
+                                        <td>Yesterday, 10:15 AM</td>
+                                        <td>2.5 MB</td>
+                                        <td class="actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>
+                                            <div class="file-info">
+                                                <i class="fas fa-file-word"></i>
+                                                <span>Meeting Notes.docx</span>
+                                            </div>
+                                        </td>
+                                        <td>You</td>
+                                        <td>2 days ago</td>
+                                        <td>342 KB</td>
+                                        <td class="actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>
+                                            <div class="file-info">
+                                                <i class="fas fa-file-powerpoint"></i>
+                                                <span>Client Presentation.pptx</span>
+                                            </div>
+                                        </td>
+                                        <td>Theresa von Castro</td>
+                                        <td>3 days ago</td>
+                                        <td>5.2 MB</td>
+                                        <td class="actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>
+                                            <div class="file-info">
+                                                <i class="fas fa-file-image"></i>
+                                                <span>Logo Design.png</span>
+                                            </div>
+                                        </td>
+                                        <td>Linda Richardson</td>
+                                        <td>1 week ago</td>
+                                        <td>1.8 MB</td>
+                                        <td class="actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Timeline View (hidden by default) -->
+                        <div class="documents-timeline" style="display: none;">
+                            <div class="timeline-group">
+                                <h3 class="timeline-date">Today</h3>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon pdf">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Annual Report Draft.pdf</h4>
+                                            <p>Created by you at 10:30 AM</p>
+                                        </div>
+                                        <div class="timeline-actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-group">
+                                <h3 class="timeline-date">Yesterday</h3>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon pdf">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Q3 Report.pdf</h4>
+                                            <p>Modified by Michael Chen at 2:15 PM</p>
+                                        </div>
+                                        <div class="timeline-actions">
+                                            <button><i class="fas fa-download"></i></button>
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon folder">
+                                            <i class="fas fa-folder"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Project X</h4>
+                                            <p>Created by you at 10:45 AM</p>
+                                        </div>
+                                        <div class="timeline-actions">
+                                            <button><i class="fas fa-share-alt"></i></button>
+                                            <button><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Preview Modal -->
+                <div class="document-modal" style="display: none;">
+                    <div class="document-modal-content">
+                        <div class="modal-header">
+                            <h2>Q3 Report.pdf</h2>
+                            <div class="modal-actions">
+                                <button class="modal-action-btn"><i class="fas fa-download"></i></button>
+                                <button class="modal-action-btn"><i class="fas fa-print"></i></button>
+                                <button class="modal-action-btn"><i class="fas fa-share-alt"></i></button>
+                                <button class="close-modal"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="document-preview">
+                                <img src="https://via.placeholder.com/800x1000" alt="Document Preview" class="preview-image">
+                            </div>
+                            <div class="document-sidebar">
+                                <div class="document-info">
+                                    <h3>Document Information</h3>
+                                    <div class="info-item">
+                                        <span class="info-label">Type:</span>
+                                        <span class="info-value">PDF Document</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Size:</span>
+                                        <span class="info-value">2.5 MB</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Created:</span>
+                                        <span class="info-value">Dec 8, 2023 by Michael Chen</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Modified:</span>
+                                        <span class="info-value">Dec 9, 2023 by Michael Chen</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Location:</span>
+                                        <span class="info-value">Finance > Reports</span>
+                                    </div>
+                                </div>
+                                <div class="document-versions">
+                                    <h3>Version History</h3>
+                                    <div class="version-item current">
+                                        <div class="version-info">
+                                            <span class="version-number">v3</span>
+                                            <span class="version-date">Dec 9, 2023, 10:15 AM</span>
+                                            <span class="version-author">Michael Chen</span>
+                                        </div>
+                                        <span class="version-label current">Current</span>
+                                    </div>
+                                    <div class="version-item">
+                                        <div class="version-info">
+                                            <span class="version-number">v2</span>
+                                            <span class="version-date">Dec 8, 2023, 4:30 PM</span>
+                                            <span class="version-author">Michael Chen</span>
+                                        </div>
+                                        <button class="version-action">Restore</button>
+                                    </div>
+                                    <div class="version-item">
+                                        <div class="version-info">
+                                            <span class="version-number">v1</span>
+                                            <span class="version-date">Dec 8, 2023, 9:45 AM</span>
+                                            <span class="version-author">You</span>
+                                        </div>
+                                        <button class="version-action">Restore</button>
+                                    </div>
+                                </div>
+                                <div class="document-comments">
+                                    <h3>Comments</h3>
+                                    <div class="comment-list">
+                                        <div class="comment-item">
+                                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Kristin Watson" class="comment-avatar">
+                                            <div class="comment-content">
+                                                <div class="comment-header">
+                                                    <span class="comment-author">Kristin Watson</span>
+                                                    <span class="comment-time">Yesterday, 3:45 PM</span>
+                                                </div>
+                                                <p class="comment-text">Please review the Q3 numbers on page 5, I think there might be a discrepancy.</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-item">
+                                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="comment-avatar">
+                                            <div class="comment-content">
+                                                <div class="comment-header">
+                                                    <span class="comment-author">Michael Chen</span>
+                                                    <span class="comment-time">Yesterday, 4:20 PM</span>
+                                                </div>
+                                                <p class="comment-text">Good catch! I've updated the figures and uploaded a new version.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-form">
+                                        <textarea placeholder="Add a comment..."></textarea>
+                                        <button class="post-comment-btn">Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Modal -->
+                <div class="upload-modal" style="display: none;">
+                    <div class="upload-modal-content">
+                        <div class="modal-header">
+                            <h2>Upload Files</h2>
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="upload-area">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag and drop files here or click to browse</p>
+                                <input type="file" id="file-upload" multiple hidden>
+                                <button class="browse-btn">Browse Files</button>
+                            </div>
+                            <div class="upload-list">
+                                <div class="upload-item">
+                                    <div class="upload-item-info">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <div class="upload-details">
+                                            <span class="upload-filename">Annual Report.pdf</span>
+                                            <div class="upload-progress">
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                                <span class="progress-text">70% • 2.1 MB / 3.0 MB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="cancel-upload"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="upload-item completed">
+                                    <div class="upload-item-info">
+                                        <i class="fas fa-file-image"></i>
+                                        <div class="upload-details">
+                                            <span class="upload-filename">Product Photo.jpg</span>
+                                            <span class="upload-status">Completed</span>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="upload-options">
+                                <div class="option">
+                                    <label for="upload-folder">Upload to:</label>
+                                    <select id="upload-folder">
+                                        <option value="recent">Recent</option>
+                                        <option value="my-documents">My Documents</option>
+                                        <option value="project-x">Project X</option>
+                                    </select>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="convert-pdfs">
+                                    <label for="convert-pdfs">Convert PDFs to searchable documents</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="cancel-btn">Cancel</button>
+                                <button class="upload-btn">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teams & Community Section -->
+            <section id="teamsCommunitySection" class="teams-community-section">
+                <!-- Header Section -->
+                <div class="teams-header">
+                    <div class="teams-title-stats">
+                        <h2>Teams & Community</h2>
+                        <div class="teams-stats">
+                            <div class="team-stat">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Active Teams</span>
+                            </div>
+                            <div class="team-stat">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="team-stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Communities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teams-actions">
+                        <div class="teams-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search teams, members, or communities...">
+                            <button class="filter-btn"><i class="fas fa-filter"></i></button>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="create-team-btn">
+                                <i class="fas fa-plus"></i> Create Team
+                            </button>
+                            <button class="join-community-btn">
+                                <i class="fas fa-users"></i> Join Community
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <div class="teams-tabs">
+                    <button class="tab-btn active" data-tab="my-teams">My Teams</button>
+                    <button class="tab-btn" data-tab="all-teams">All Teams</button>
+                    <button class="tab-btn" data-tab="communities">Communities</button>
+                    <button class="tab-btn" data-tab="events">Events</button>
+                    <button class="tab-btn" data-tab="directory">Directory</button>
+                </div>
+
+                <!-- Teams Content Area -->
+                <div class="teams-content">
+                    <!-- My Teams Tab -->
+                    <div class="tab-content active" id="my-teams">
+                        <div class="teams-categories">
+                            <div class="category-filters">
+                                <button class="category-btn active">All</button>
+                                <button class="category-btn">Project Teams</button>
+                                <button class="category-btn">Department Teams</button>
+                                <button class="category-btn">Interest Groups</button>
+                                <button class="category-btn">Cross-functional</button>
+                            </div>
+                        </div>
+
+                        <div class="teams-grid">
+                            <!-- Project Team Card -->
+                            <div class="team-card">
+                                <div class="team-header">
+                                    <img src="https://via.placeholder.com/64" alt="Website Redesign Team" class="team-avatar">
+                                    <div class="team-type project">Project Team</div>
+                                </div>
+                                <div class="team-info">
+                                    <h3>Website Redesign</h3>
+                                    <p class="team-description">Redesigning the company website with focus on user experience and modern design principles.</p>
+                                </div>
+                                <div class="team-meta">
+                                    <div class="team-members">
+                                        <div class="member-avatars">
+                                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda">
+                                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa">
+                                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Kristin">
+                                            <span class="more-members">+3</span>
+                                        </div>
+                                        <span>6 members</span>
+                                    </div>
+                                    <div class="team-activity">
+                                        <span class="activity-indicator active"></span>
+                                        Active now
+                                    </div>
+                                </div>
+                                <div class="team-actions">
+                                    <button class="team-action-btn"><i class="fas fa-comment"></i> Chat</button>
+                                    <button class="team-action-btn"><i class="fas fa-tasks"></i> Tasks</button>
+                                    <button class="team-action-btn"><i class="fas fa-ellipsis-h"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Department Team Card -->
+                            <div class="team-card">
+                                <div class="team-header">
+                                    <img src="https://via.placeholder.com/64" alt="Marketing Team" class="team-avatar">
+                                    <div class="team-type department">Department</div>
+                                </div>
+                                <div class="team-info">
+                                    <h3>Marketing Team</h3>
+                                    <p class="team-description">Driving brand awareness and growth through strategic marketing initiatives.</p>
+                                </div>
+                                <div class="team-meta">
+                                    <div class="team-members">
+                                        <div class="member-avatars">
+                                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David">
+                                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Emma">
+                                            <span class="more-members">+8</span>
+                                        </div>
+                                        <span>12 members</span>
+                                    </div>
+                                    <div class="team-activity">
+                                        <span class="activity-indicator"></span>
+                                        2 hours ago
+                                    </div>
+                                </div>
+                                <div class="team-actions">
+                                    <button class="team-action-btn"><i class="fas fa-comment"></i> Chat</button>
+                                    <button class="team-action-btn"><i class="fas fa-tasks"></i> Tasks</button>
+                                    <button class="team-action-btn"><i class="fas fa-ellipsis-h"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Interest Group Card -->
+                            <div class="team-card">
+                                <div class="team-header">
+                                    <img src="https://via.placeholder.com/64" alt="Tech Talk" class="team-avatar">
+                                    <div class="team-type interest">Interest Group</div>
+                                </div>
+                                <div class="team-info">
+                                    <h3>Tech Talk</h3>
+                                    <p class="team-description">Weekly discussions about latest technology trends and innovations.</p>
+                                </div>
+                                <div class="team-meta">
+                                    <div class="team-members">
+                                        <div class="member-avatars">
+                                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael">
+                                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Linda">
+                                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="James">
+                                            <span class="more-members">+15</span>
+                                        </div>
+                                        <span>18 members</span>
+                                    </div>
+                                    <div class="team-activity">
+                                        <span class="activity-indicator"></span>
+                                        1 day ago
+                                    </div>
+                                </div>
+                                <div class="team-actions">
+                                    <button class="team-action-btn"><i class="fas fa-comment"></i> Chat</button>
+                                    <button class="team-action-btn"><i class="fas fa-calendar"></i> Events</button>
+                                    <button class="team-action-btn"><i class="fas fa-ellipsis-h"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Communities Tab -->
+                    <div class="tab-content" id="communities">
+                        <div class="communities-grid">
+                            <!-- Community Card -->
+                            <div class="community-card">
+                                <div class="community-header">
+                                    <img src="https://via.placeholder.com/64" alt="Design Guild" class="community-avatar">
+                                    <div class="member-count">45 members</div>
+                                </div>
+                                <div class="community-info">
+                                    <h3>Design Guild</h3>
+                                    <p class="community-description">A community for designers to share work, get feedback, and discuss design trends.</p>
+                                    <div class="community-tags">
+                                        <span class="tag">Design</span>
+                                        <span class="tag">UI/UX</span>
+                                        <span class="tag">Creative</span>
+                                    </div>
+                                </div>
+                                <div class="community-activity">
+                                    <div class="activity-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>Latest discussion: Color theory in digital design</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Next event: Design workshop (Tomorrow)</span>
+                                    </div>
+                                </div>
+                                <div class="community-actions">
+                                    <button class="join-btn">Join Community</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <!-- Community Card -->
+                            <div class="community-card">
+                                <div class="community-header">
+                                    <img src="https://via.placeholder.com/64" alt="Book Club" class="community-avatar">
+                                    <div class="member-count">28 members</div>
+                                </div>
+                                <div class="community-info">
+                                    <h3>Book Club</h3>
+                                    <p class="community-description">Monthly book discussions and reading recommendations for book lovers.</p>
+                                    <div class="community-tags">
+                                        <span class="tag">Books</span>
+                                        <span class="tag">Reading</span>
+                                        <span class="tag">Discussion</span>
+                                    </div>
+                                </div>
+                                <div class="community-activity">
+                                    <div class="activity-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Current book: "The Innovator's Dilemma"</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Next meeting: Friday, 3 PM</span>
+                                    </div>
+                                </div>
+                                <div class="community-actions">
+                                    <button class="join-btn">Join Community</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Directory Tab -->
+                    <div class="tab-content" id="directory">
+                        <div class="directory-filters">
+                            <div class="filter-group">
+                                <select class="department-filter">
+                                    <option value="">All Departments</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="design">Design</option>
+                                    <option value="product">Product</option>
+                                </select>
+                                <select class="location-filter">
+                                    <option value="">All Locations</option>
+                                    <option value="sf">San Francisco</option>
+                                    <option value="ny">New York</option>
+                                    <option value="ld">London</option>
+                                </select>
+                                <select class="skills-filter">
+                                    <option value="">All Skills</option>
+                                    <option value="ui">UI Design</option>
+                                    <option value="dev">Development</option>
+                                    <option value="pm">Project Management</option>
+                                </select>
+                            </div>
+                            <div class="view-toggle">
+                                <button class="view-btn grid-view-btn active">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn list-view-btn">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                                <button class="view-btn org-view-btn">
+                                    <i class="fas fa-sitemap"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="directory-grid">
+                            <!-- Employee Card -->
+                            <div class="employee-card">
+                                <div class="employee-header">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Richardson" class="employee-avatar">
+                                    <span class="status-indicator online"></span>
+                                </div>
+                                <div class="employee-info">
+                                    <h3>Linda Richardson</h3>
+                                    <p class="employee-title">Motion Designer</p>
+                                    <p class="employee-department">Marketing Department</p>
+                                </div>
+                                <div class="employee-skills">
+                                    <span class="skill">Motion Design</span>
+                                    <span class="skill">After Effects</span>
+                                    <span class="skill">Video Editing</span>
+                                </div>
+                                <div class="employee-contact">
+                                    <button class="contact-btn"><i class="fas fa-comment"></i> Message</button>
+                                    <button class="contact-btn"><i class="fas fa-envelope"></i> Email</button>
+                                </div>
+                            </div>
+
+                            <!-- Employee Card -->
+                            <div class="employee-card">
+                                <div class="employee-header">
+                                    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="employee-avatar">
+                                    <span class="status-indicator busy"></span>
+                                </div>
+                                <div class="employee-info">
+                                    <h3>Theresa von Castro</h3>
+                                    <p class="employee-title">Senior Product Designer</p>
+                                    <p class="employee-department">Design Department</p>
+                                </div>
+                                <div class="employee-skills">
+                                    <span class="skill">UI Design</span>
+                                    <span class="skill">UX Research</span>
+                                    <span class="skill">Prototyping</span>
+                                </div>
+                                <div class="employee-contact">
+                                    <button class="contact-btn"><i class="fas fa-comment"></i> Message</button>
+                                    <button class="contact-btn"><i class="fas fa-envelope"></i> Email</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Tab -->
+                    <div class="tab-content" id="events">
+                        <div class="events-filters">
+                            <div class="filter-group">
+                                <button class="filter-btn active">All Events</button>
+                                <button class="filter-btn">Team Events</button>
+                                <button class="filter-btn">Community Events</button>
+                                <button class="filter-btn">Training</button>
+                            </div>
+                            <button class="create-event-btn">
+                                <i class="fas fa-plus"></i> Create Event
+                            </button>
+                        </div>
+
+                        <div class="events-timeline">
+                            <!-- Today's Events -->
+                            <div class="events-group">
+                                <h3 class="date-header">Today</h3>
+                                <div class="event-card">
+                                    <div class="event-time">10:00 AM - 11:30 AM</div>
+                                    <div class="event-content">
+                                        <div class="event-type team">Team Event</div>
+                                        <h4>Website Redesign Sprint Planning</h4>
+                                        <p>Planning session for the upcoming sprint focusing on homepage redesign.</p>
+                                        <div class="event-meta">
+                                            <div class="event-attendees">
+                                                <div class="attendee-avatars">
+                                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda">
+                                                    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa">
+                                                    <span class="more-attendees">+4</span>
+                                                </div>
+                                                <span>6 attendees</span>
+                                            </div>
+                                            <div class="event-location">
+                                                <i class="fas fa-video"></i> Zoom Meeting
+                                            </div>
+                                        </div>
+                                        <div class="event-actions">
+                                            <button class="join-btn">Join Meeting</button>
+                                            <button class="details-btn">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tomorrow's Events -->
+                            <div class="events-group">
+                                <h3 class="date-header">Tomorrow</h3>
+                                <div class="event-card">
+                                    <div class="event-time">2:00 PM - 3:30 PM</div>
+                                    <div class="event-content">
+                                        <div class="event-type community">Community Event</div>
+                                        <h4>Design Guild Workshop</h4>
+                                        <p>Interactive workshop on color theory in digital design.</p>
+                                        <div class="event-meta">
+                                            <div class="event-attendees">
+                                                <div class="attendee-avatars">
+                                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David">
+                                                    <span class="more-attendees">+12</span>
+                                                </div>
+                                                <span>14 attendees</span>
+                                            </div>
+                                            <div class="event-location">
+                                                <i class="fas fa-building"></i> Conference Room A
+                                            </div>
+                                        </div>
+                                        <div class="event-actions">
+                                            <button class="rsvp-btn">RSVP</button>
+                                            <button class="details-btn">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Create Team Modal -->
+                <div class="create-team-modal" style="display: none;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Create New Team</h2>
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="create-team-form">
+                                <div class="form-group">
+                                    <label for="teamName">Team Name</label>
+                                    <input type="text" id="teamName" placeholder="Enter team name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="teamType">Team Type</label>
+                                    <select id="teamType" required>
+                                        <option value="project">Project Team</option>
+                                        <option value="department">Department Team</option>
+                                        <option value="interest">Interest Group</option>
+                                        <option value="cross-functional">Cross-functional Team</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="teamDescription">Description</label>
+                                    <textarea id="teamDescription" placeholder="Enter team description" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Team Avatar</label>
+                                    <div class="avatar-upload">
+                                        <input type="file" id="teamAvatar" accept="image/*" hidden>
+                                        <button type="button" class="upload-avatar-btn">
+                                            <i class="fas fa-upload"></i> Upload Image
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Initial Members</label>
+                                    <div class="member-search">
+                                        <input type="text" placeholder="Search members">
+                                        <div class="selected-members">
+                                            <!-- Selected members will be added here -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="cancel-btn">Cancel</button>
+                                    <button type="submit" class="create-btn">Create Team</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="news-feed-section">
                 <div class="section-header">
                     <h2>News feed <span>10</span></h2>
@@ -943,8 +2415,14 @@
     <script src="company-interactions.js"></script>
     <script src="navigation.js"></script>
     <script src="stories.js"></script>
+    <script src="task-manager.js"></script>
+    <script src="documents.js"></script>
+    <script src="teams-community.js"></script>
     <link rel="stylesheet" href="chat.css">
     <link rel="stylesheet" href="stories.css">
     <link rel="stylesheet" href="company-section.css">
+    <link rel="stylesheet" href="task-manager.css">
+    <link rel="stylesheet" href="documents.css">
+    <link rel="stylesheet" href="teams-community.css">
 </body>
 </html>
