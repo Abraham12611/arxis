@@ -12,7 +12,9 @@
         <!-- Left Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h1 class="logo">Staffbase</h1>
+                <div class="logo">
+                    <img src="public/arxis.png" alt="arxis" class="logo-img">
+                </div>
                 <div class="options-icon">
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
@@ -47,10 +49,11 @@
                         <span>Calendar</span>
                         <span class="count">6</span>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item messenger-nav-item" data-page="messenger">
                         <i class="fas fa-comment"></i>
                         <span>Messenger</span>
                         <span class="count"><span class="dot green-dot"></span>15 <span class="secondary-count">106</span></span>
+                        <span class="message-notification" style="display: none;"></span>
                     </li>
                     <li class="nav-item">
                         <i class="fas fa-check-circle"></i>
@@ -114,19 +117,77 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <div class="search-container">
-                <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Colleagues, projects, anything...">
-                    <i class="fas fa-map-marker-alt"></i>
+            <!-- Default Content -->
+            <div class="default-content">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Colleagues, projects, anything...">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="recent-task">
+                        <span>Recent</span>
+                        <span>Internal task</span>
+                    </div>
+                    <button class="create-new-btn">
+                        <i class="fas fa-plus"></i> Create new
+                    </button>
                 </div>
-                <div class="recent-task">
-                    <span>Recent</span>
-                    <span>Internal task</span>
+            </div>
+
+            <!-- Messenger Content (Initially Hidden) -->
+            <div class="messenger-content" style="display: none;">
+                <div class="messenger-header">
+                    <button class="back-to-feed">
+                        <i class="fas fa-arrow-left"></i> Back to Feed
+                    </button>
+                    <h2>Messenger</h2>
+                    <div class="messenger-actions">
+                        <i class="fas fa-cog"></i>
+                    </div>
                 </div>
-                <button class="create-new-btn">
-                    <i class="fas fa-plus"></i> Create new
-                </button>
+
+                <div class="chat-container">
+                    <div class="chat-sidebar">
+                        <div class="chat-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search contacts...">
+                        </div>
+                        <div class="chat-contacts">
+                            <!-- Chat contacts will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="chat-main">
+                        <div class="chat-header">
+                            <div class="chat-user-info">
+                                <img src="" alt="" class="chat-user-avatar">
+                                <div>
+                                    <p class="chat-user-name"></p>
+                                    <p class="chat-user-status">Online</p>
+                                </div>
+                            </div>
+                            <div class="chat-header-actions">
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-video"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages">
+                            <!-- Messages will be populated dynamically -->
+                        </div>
+
+                        <div class="chat-input-container">
+                            <i class="far fa-smile"></i>
+                            <input type="text" class="chat-input" placeholder="Type a message...">
+                            <i class="fas fa-paperclip"></i>
+                            <button class="send-message-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <section class="stories-section">
@@ -178,7 +239,7 @@
                 </div>
 
                 <div class="feed-container">
-                    <div class="feed-item large">
+                    <div class="feed-item large" data-post-id="post1">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
@@ -200,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="post2">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="user-avatar">
@@ -222,7 +283,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="post3">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="user-avatar">
@@ -247,7 +308,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item">
+                    <div class="feed-item" data-post-id="post4">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="User" class="user-avatar">
