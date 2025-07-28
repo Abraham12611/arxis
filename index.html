@@ -325,26 +325,329 @@
 
                 <!-- Other Tabs Content (Placeholders) -->
                 <div id="newsTab" class="company-tab-content">
-                    <div class="tab-placeholder">
-                        <div class="placeholder-icon"><i class="far fa-newspaper"></i></div>
-                        <h3 class="placeholder-title">News & Updates</h3>
-                        <p class="placeholder-text">Stay updated with the latest company news, announcements, and press releases.</p>
+                    <!-- News & Updates Header Section -->
+                    <div class="news-header">
+                        <div class="news-search-filter">
+                            <div class="news-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search news by keyword or date...">
+                            </div>
+                            <div class="news-filters">
+                                <select class="news-filter-dropdown">
+                                    <option value="all">All News</option>
+                                    <option value="company-announcements">Company Announcements</option>
+                                    <option value="press-releases">Press Releases</option>
+                                    <option value="internal-updates">Internal Updates</option>
+                                    <option value="policy-changes">Policy Changes</option>
+                                </select>
+                                <select class="news-sort-dropdown">
+                                    <option value="recent">Most Recent</option>
+                                    <option value="popular">Most Popular</option>
+                                    <option value="category">Category</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured News Section -->
+                    <div class="featured-news">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Recent News Feed -->
+                    <div class="news-section">
+                        <h3 class="section-title">Recent News & Updates</h3>
+                        <div class="news-grid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Subscription -->
+                    <div class="newsletter-section">
+                        <div class="newsletter-container">
+                            <div class="newsletter-content">
+                                <h3>Stay Updated</h3>
+                                <p>Subscribe to our newsletter to receive the latest company news directly to your inbox.</p>
+                                <form class="newsletter-form">
+                                    <input type="email" placeholder="Enter your email address" required>
+                                    <div class="frequency-options">
+                                        <label>
+                                            <input type="radio" name="frequency" value="daily" checked>
+                                            <span>Daily</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="frequency" value="weekly">
+                                            <span>Weekly</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="frequency" value="monthly">
+                                            <span>Monthly</span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                                </form>
+                            </div>
+                            <div class="newsletter-preview">
+                                <img src="https://images.unsplash.com/photo-1586339949216-35c2747cc36d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Newsletter preview">
+                                <span>Preview of our newsletter format</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Archive -->
+                    <div class="news-archive">
+                        <div class="archive-header">
+                            <h3>News Archive</h3>
+                            <button class="toggle-archive-btn">
+                                <span>View Older News</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="archive-content" style="display: none;">
+                            <div class="archive-filters">
+                                <select class="archive-year">
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                                <select class="archive-month">
+                                    <option value="all">All Months</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="archive-grid">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                            <div class="archive-pagination">
+                                <button class="pagination-btn prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                                <div class="pagination-numbers">
+                                    <span class="page-number active">1</span>
+                                    <span class="page-number">2</span>
+                                    <span class="page-number">3</span>
+                                </div>
+                                <button class="pagination-btn next-page">Next <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Article Modal -->
+                    <div class="news-modal" style="display: none;">
+                        <div class="news-modal-content">
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                            <div class="news-article">
+                                <!-- Will be populated by JavaScript when a news item is clicked -->
+                            </div>
+                            <div class="article-actions">
+                                <button class="article-action-btn like-article">
+                                    <i class="far fa-heart"></i> Like
+                                </button>
+                                <button class="article-action-btn share-article">
+                                    <i class="fas fa-share-alt"></i> Share
+                                </button>
+                                <button class="article-action-btn bookmark-article">
+                                    <i class="far fa-bookmark"></i> Save
+                                </button>
+                                <button class="article-action-btn print-article">
+                                    <i class="fas fa-print"></i> Print
+                                </button>
+                            </div>
+                            <div class="article-comments">
+                                <h3>Comments <span class="comment-count">0</span></h3>
+                                <div class="comment-form">
+                                    <textarea placeholder="Add your comment..."></textarea>
+                                    <button class="post-comment-btn">Post Comment</button>
+                                </div>
+                                <div class="comments-list">
+                                    <!-- Will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div id="teamTab" class="company-tab-content">
-                    <div class="tab-placeholder">
-                        <div class="placeholder-icon"><i class="fas fa-users"></i></div>
-                        <h3 class="placeholder-title">Team Directory</h3>
-                        <p class="placeholder-text">Browse our complete employee directory and find contact information for your colleagues.</p>
+                    <!-- Team Directory Header -->
+                    <div class="team-header">
+                        <div class="team-filters">
+                            <div class="team-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search by name, title, department, or skill...">
+                            </div>
+                            <div class="filter-group">
+                                <select class="department-filter">
+                                    <option value="all">All Departments</option>
+                                    <!-- Will be populated by JavaScript -->
+                                </select>
+                                <select class="level-filter">
+                                    <option value="all">All Levels</option>
+                                    <!-- Will be populated by JavaScript -->
+                                </select>
+                                <select class="location-filter">
+                                    <option value="all">All Locations</option>
+                                    <!-- Will be populated by JavaScript -->
+                                </select>
+                            </div>
+                            <div class="view-toggle">
+                                <button class="view-btn grid-view-btn active">
+                                    <i class="fas fa-th"></i> Grid View
+                                </button>
+                                <button class="view-btn list-view-btn">
+                                    <i class="fas fa-list"></i> List View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="skills-filter">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Team Grid -->
+                    <div class="team-grid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- No Results Message -->
+                    <div class="no-team-results" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <h3>No Results Found</h3>
+                        <p>Try adjusting your search or filter criteria</p>
+                    </div>
+
+                    <!-- Employee Profile Modal -->
+                    <div class="employee-modal" style="display: none;">
+                        <div class="employee-modal-content">
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                            <div class="employee-profile">
+                                <!-- Will be populated by JavaScript when an employee is clicked -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div id="departmentsTab" class="company-tab-content">
-                    <div class="tab-placeholder">
-                        <div class="placeholder-icon"><i class="fas fa-sitemap"></i></div>
-                        <h3 class="placeholder-title">Departments</h3>
-                        <p class="placeholder-text">Explore our organizational structure and learn about different departments.</p>
+                    <!-- Departments Header Section -->
+                    <div class="departments-header">
+                        <div class="view-toggle">
+                            <button class="view-btn org-chart-btn active">
+                                <i class="fas fa-sitemap"></i> Org Chart
+                            </button>
+                            <button class="view-btn grid-view-btn">
+                                <i class="fas fa-th"></i> Grid View
+                            </button>
+                        </div>
+                        <div class="department-search-filter">
+                            <div class="department-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search departments or employees...">
+                            </div>
+                            <select class="department-filter">
+                                <option value="all">All Departments</option>
+                                <option value="executive">Executive</option>
+                                <option value="technology">Technology</option>
+                                <option value="operations">Operations</option>
+                                <option value="business">Business Development</option>
+                                <option value="support">Support Services</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Organizational Chart View -->
+                    <div class="org-chart-view">
+                        <div class="zoom-controls">
+                            <button class="zoom-btn zoom-out"><i class="fas fa-minus"></i></button>
+                            <button class="zoom-btn zoom-reset">100%</button>
+                            <button class="zoom-btn zoom-in"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="org-chart-container">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Department Grid View -->
+                    <div class="department-grid-view" style="display: none;">
+                        <div class="department-category">
+                            <h3 class="category-title">Executive Leadership</h3>
+                            <div class="department-cards">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="department-category">
+                            <h3 class="category-title">Technology Division</h3>
+                            <div class="department-cards">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="department-category">
+                            <h3 class="category-title">Operations</h3>
+                            <div class="department-cards">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="department-category">
+                            <h3 class="category-title">Business Development</h3>
+                            <div class="department-cards">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="department-category">
+                            <h3 class="category-title">Support Services</h3>
+                            <div class="department-cards">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Department Details Modal -->
+                    <div class="department-modal" style="display: none;">
+                        <div class="department-modal-content">
+                            <button class="close-modal"><i class="fas fa-times"></i></button>
+                            <div class="department-details">
+                                <!-- Will be populated by JavaScript when a department is clicked -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cross-Department Collaboration View -->
+                    <div class="collaboration-section">
+                        <h3 class="section-title">Cross-Department Collaboration</h3>
+                        <div class="collaboration-tabs">
+                            <button class="collab-tab active" data-view="heatmap">Collaboration Heatmap</button>
+                            <button class="collab-tab" data-view="projects">Joint Projects</button>
+                        </div>
+                        <div class="collaboration-view">
+                            <div class="heatmap-view">
+                                <div class="heatmap-container">
+                                    <!-- Will be populated by JavaScript -->
+                                </div>
+                                <div class="heatmap-legend">
+                                    <span class="legend-item low">Low</span>
+                                    <span class="legend-item medium">Medium</span>
+                                    <span class="legend-item high">High</span>
+                                </div>
+                            </div>
+                            <div class="projects-view" style="display: none;">
+                                <div class="joint-projects">
+                                    <!-- Will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -357,10 +660,52 @@
                 </div>
 
                 <div id="achievementsTab" class="company-tab-content">
-                    <div class="tab-placeholder">
-                        <div class="placeholder-icon"><i class="fas fa-trophy"></i></div>
-                        <h3 class="placeholder-title">Achievements</h3>
-                        <p class="placeholder-text">Discover our awards, recognitions, and major milestones.</p>
+                    <!-- Achievements Header -->
+                    <div class="achievements-header">
+                        <div class="achievements-filters">
+                            <div class="filter-buttons">
+                                <button class="achievement-filter active" data-category="all">All</button>
+                                <button class="achievement-filter" data-category="awards">Awards</button>
+                                <button class="achievement-filter" data-category="certifications">Certifications</button>
+                                <button class="achievement-filter" data-category="milestones">Milestones</button>
+                                <button class="achievement-filter" data-category="recognition">Client Recognition</button>
+                            </div>
+                            <div class="achievement-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search achievements...">
+                            </div>
+                            <button class="timeline-toggle">
+                                <i class="fas fa-stream"></i>
+                                <span>View Timeline</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Featured Achievement -->
+                    <div class="featured-achievement">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Statistics Dashboard -->
+                    <div class="statistics-dashboard">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Achievement Categories -->
+                    <div class="achievement-categories">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Achievement Timeline -->
+                    <div class="achievement-timeline" style="display: none;">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- No Results Message -->
+                    <div class="no-achievements-results" style="display: none;">
+                        <i class="fas fa-trophy"></i>
+                        <h3>No Achievements Found</h3>
+                        <p>Try adjusting your search or filter criteria</p>
                     </div>
                 </div>
             </section>
