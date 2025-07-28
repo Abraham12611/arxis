@@ -61,6 +61,7 @@ button {
 
 .logo-img {
     height: 32px;
+    max-width: 120px;
     width: auto;
 }
 
@@ -490,10 +491,33 @@ button {
     font-size: 14px;
 }
 
-.comment-count, .like-count {
+.comment-btn, .like-btn {
     display: flex;
     align-items: center;
     gap: 4px;
+    background: none;
+    border: none;
+    color: #64748B;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.comment-btn:hover, .like-btn:hover {
+    background-color: #F1F5F9;
+}
+
+.like-btn.liked i {
+    color: #EF4444;
+    animation: likeAnimation 0.4s ease;
+}
+
+@keyframes likeAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
 }
 
 .more-options {
