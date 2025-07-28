@@ -269,7 +269,7 @@ const companyData = {
                 title: "Partnership Announcement with Global Tech Leader",
                 excerpt: "arxis and TechGiant announce strategic partnership to deliver integrated AI solutions for enterprise clients worldwide.",
                 content: "arxis and TechGiant announce strategic partnership to deliver integrated AI solutions for enterprise clients worldwide. This collaboration combines arxis's innovative analytics platform with TechGiant's industry-leading cloud infrastructure to create powerful, scalable solutions for large organizations.\n\nThe partnership will initially focus on three key areas:\n\n1. Developing industry-specific AI solutions for healthcare, finance, and manufacturing sectors\n2. Creating seamless integration between both companies' platforms for enhanced data processing capabilities\n3. Establishing a joint innovation lab to explore emerging technologies and use cases\n\n\"This partnership represents a significant milestone in our growth strategy,\" said Michael Chen, CTO of arxis. \"By combining our strengths with TechGiant's robust infrastructure, we can deliver unprecedented value to enterprise clients navigating complex digital transformation journeys.\"\n\nThe first integrated solutions are expected to launch in Q3 2024, with joint go-to-market activities beginning immediately.",
-                image: "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
                 category: "Press Releases",
                 categoryColor: "#8B5CF6",
                 author: "Michael Chen",
