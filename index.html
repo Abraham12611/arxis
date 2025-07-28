@@ -202,29 +202,165 @@
                         </div>
                         <p class="story-name">Add story</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-1">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/65.jpg')"></div>
                         <p class="story-name">Dianne</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-2">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/72.jpg')"></div>
                         <p class="story-name">Mafia Team</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-3">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/32.jpg')"></div>
                         <p class="story-name">Kristin</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-4">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/lego/1.jpg')"></div>
                         <p class="story-name">HR Dept</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-5">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
                         <p class="story-name">Victor</p>
                     </div>
-                    <div class="story">
+                    <div class="story" data-story-id="story-6">
                         <div class="story-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/89.jpg')"></div>
                         <p class="story-name">Zarinka</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Section -->
+            <section id="companySection" class="company-section">
+                <div class="company-header">
+                    <img src="" alt="Company Banner" class="company-banner">
+                    <div class="company-logo-container">
+                        <img src="" alt="arxis logo" class="company-logo">
+                    </div>
+                    <div class="company-header-overlay">
+                        <h1 class="company-name"></h1>
+                        <p class="company-tagline"></p>
+                        <div class="company-meta">
+                            <div class="company-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Founded in <span class="founded-year"></span></span>
+                            </div>
+                            <div class="company-meta-item">
+                                <i class="fas fa-users"></i>
+                                <span><span class="employees-count"></span> Employees</span>
+                            </div>
+                            <div class="company-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="locations-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-navigation">
+                    <div class="company-breadcrumb">
+                        <a href="#" id="backToFeedBtn" class="back-to-feed-btn"><i class="fas fa-arrow-left"></i> Back to Feed</a>
+                    </div>
+                    <div class="company-tabs">
+                        <div class="company-tab active" data-tab="overview">Overview</div>
+                        <div class="company-tab" data-tab="news">News & Updates</div>
+                        <div class="company-tab" data-tab="team">Team Directory</div>
+                        <div class="company-tab" data-tab="departments">Departments</div>
+                        <div class="company-tab" data-tab="values">Company Values</div>
+                        <div class="company-tab" data-tab="achievements">Achievements</div>
+                    </div>
+                </div>
+
+                <!-- Overview Tab Content -->
+                <div id="overviewTab" class="company-tab-content">
+                    <!-- Company Stats -->
+                    <div class="company-stats">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Mission & Vision -->
+                    <div class="mission-vision">
+                        <div class="mission-card">
+                            <h3 class="card-title">Our Mission</h3>
+                            <p class="card-content mission-content"></p>
+                        </div>
+                        <div class="vision-card">
+                            <h3 class="card-title">Our Vision</h3>
+                            <p class="card-content vision-content"></p>
+                        </div>
+                    </div>
+
+                    <!-- Core Values -->
+                    <div class="core-values">
+                        <h3 class="section-title">Core Values</h3>
+                        <div class="values-grid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Company Highlights -->
+                    <div class="company-highlights">
+                        <h3 class="section-title">Recent Company Highlights</h3>
+                        <div class="highlights-grid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Leadership Team -->
+                    <div class="leadership-team">
+                        <h3 class="section-title">Leadership Team</h3>
+                        <div class="team-preview">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                        <a href="#" class="view-all-team">View Full Team</a>
+                    </div>
+
+                    <!-- Company Timeline -->
+                    <div class="company-timeline">
+                        <h3 class="section-title">Company Timeline</h3>
+                        <div class="timeline">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Tabs Content (Placeholders) -->
+                <div id="newsTab" class="company-tab-content">
+                    <div class="tab-placeholder">
+                        <div class="placeholder-icon"><i class="far fa-newspaper"></i></div>
+                        <h3 class="placeholder-title">News & Updates</h3>
+                        <p class="placeholder-text">Stay updated with the latest company news, announcements, and press releases.</p>
+                    </div>
+                </div>
+
+                <div id="teamTab" class="company-tab-content">
+                    <div class="tab-placeholder">
+                        <div class="placeholder-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="placeholder-title">Team Directory</h3>
+                        <p class="placeholder-text">Browse our complete employee directory and find contact information for your colleagues.</p>
+                    </div>
+                </div>
+
+                <div id="departmentsTab" class="company-tab-content">
+                    <div class="tab-placeholder">
+                        <div class="placeholder-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3 class="placeholder-title">Departments</h3>
+                        <p class="placeholder-text">Explore our organizational structure and learn about different departments.</p>
+                    </div>
+                </div>
+
+                <div id="valuesTab" class="company-tab-content">
+                    <div class="tab-placeholder">
+                        <div class="placeholder-icon"><i class="fas fa-heart"></i></div>
+                        <h3 class="placeholder-title">Company Values</h3>
+                        <p class="placeholder-text">Learn more about our core values and how they guide our work and culture.</p>
+                    </div>
+                </div>
+
+                <div id="achievementsTab" class="company-tab-content">
+                    <div class="tab-placeholder">
+                        <div class="placeholder-icon"><i class="fas fa-trophy"></i></div>
+                        <h3 class="placeholder-title">Achievements</h3>
+                        <p class="placeholder-text">Discover our awards, recognitions, and major milestones.</p>
                     </div>
                 </div>
             </section>
@@ -458,6 +594,12 @@
     <script src="newsfeed-interactions.js"></script>
     <script src="chat-system.js"></script>
     <script src="message-automation.js"></script>
+    <script src="company-data.js"></script>
+    <script src="company-interactions.js"></script>
+    <script src="navigation.js"></script>
+    <script src="stories.js"></script>
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="stories.css">
+    <link rel="stylesheet" href="company-section.css">
 </body>
 </html>
