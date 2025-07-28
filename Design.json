@@ -1,0 +1,134 @@
+{
+  "name": "arxis Intranet Homepage",
+  "version": "1.0.0",
+  "description": "A modern intranet homepage for arxis company, cloned from Staffbase interface",
+  "layout": {
+    "columns": 3,
+    "widths": ["280px", "1fr", "320px"],
+    "background": "linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%)"
+  },
+  "colors": {
+    "primary": "#4A90E2",
+    "secondary": "#5B9BD5",
+    "text": {
+      "primary": "#1E293B",
+      "secondary": "#64748B",
+      "tertiary": "#94A3B8"
+    },
+    "background": {
+      "main": "linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%)",
+      "white": "#FFFFFF",
+      "light": "#F1F5F9",
+      "lighter": "#F8FAFC"
+    },
+    "border": "#E2E8F0",
+    "accent": {
+      "success": "#10B981",
+      "orange": "#FF8A4C",
+      "red": "#EF4444"
+    }
+  },
+  "typography": {
+    "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "sizes": {
+      "logo": "20px",
+      "heading": "24px",
+      "subheading": "18px",
+      "name": "16px",
+      "body": "14px",
+      "small": "12px"
+    },
+    "weights": {
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "spacing": {
+    "container": "24px",
+    "card": "20px",
+    "standard": "16px",
+    "compact": "8px",
+    "sections": "24px"
+  },
+  "borderRadius": {
+    "button": "8px",
+    "card": "12px",
+    "search": "24px",
+    "circle": "50%"
+  },
+  "components": {
+    "sidebar": {
+      "width": "280px",
+      "background": "#FFFFFF",
+      "border": "1px solid #E2E8F0"
+    },
+    "mainContent": {
+      "width": "auto",
+      "padding": "24px"
+    },
+    "rightPanel": {
+      "width": "320px",
+      "background": "#FFFFFF",
+      "border": "1px solid #E2E8F0"
+    },
+    "avatar": {
+      "sizes": {
+        "small": "32px",
+        "medium": "40px",
+        "large": "48px",
+        "stories": "64px"
+      },
+      "border": "2px solid #FFFFFF",
+      "shadow": "0 2px 4px rgba(0, 0, 0, 0.1)"
+    },
+    "card": {
+      "background": "#FFFFFF",
+      "shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      "borderRadius": "12px"
+    },
+    "button": {
+      "primary": {
+        "background": "#4A90E2",
+        "color": "#FFFFFF"
+      },
+      "secondary": {
+        "border": "1px solid #E2E8F0",
+        "color": "#64748B"
+      }
+    }
+  },
+  "sections": {
+    "stories": {
+      "layout": "horizontal-scroll",
+      "itemWidth": "64px",
+      "spacing": "16px"
+    },
+    "newsFeed": {
+      "layout": "grid",
+      "columns": 2,
+      "gap": "24px"
+    },
+    "calendar": {
+      "columns": 7,
+      "rows": 5
+    },
+    "todo": {
+      "layout": "vertical-list",
+      "spacing": "12px"
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "desktop": "1200px",
+      "tablet": "992px",
+      "mobile": "768px"
+    },
+    "layouts": {
+      "desktop": "3-column",
+      "tablet": "collapsed-sidebar",
+      "mobile": "stacked"
+    }
+  }
+}
