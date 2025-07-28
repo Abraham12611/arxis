@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "arxis-intranet",
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "src/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "server.js" },
+    { "src": "/resolve", "dest": "server.js" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

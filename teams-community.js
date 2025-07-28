@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setupSearch();
         setupTeamActions();
         setupModals();
+        setupViewToggle();
     }
 
     // Setup tab switching
@@ -300,6 +301,57 @@ document.addEventListener('DOMContentLoaded', function() {
             avatarInput.addEventListener('change', function() {
                 handleAvatarUpload(this.files[0]);
             });
+        }
+    }
+
+    // Setup view toggle for directory
+    function setupViewToggle() {
+        const gridViewBtn = document.querySelector('.grid-view-btn');
+        const listViewBtn = document.querySelector('.list-view-btn');
+        const orgViewBtn = document.querySelector('.org-view-btn');
+        const directoryGrid = document.querySelector('.directory-grid');
+
+        if (gridViewBtn && listViewBtn && directoryGrid) {
+            // Set initial state from localStorage or default to grid view
+            const savedView = localStorage.getItem('directoryViewMode') || 'grid';
+            if (savedView === 'list') {
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+                directoryGrid.classList.add('list-view');
+            } else {
+                gridViewBtn.classList.add('active');
+                listViewBtn.classList.remove('active');
+                directoryGrid.classList.remove('list-view');
+            }
+
+            // Grid view button click handler
+            gridViewBtn.addEventListener('click', function() {
+                gridViewBtn.classList.add('active');
+                listViewBtn.classList.remove('active');
+                if (orgViewBtn) orgViewBtn.classList.remove('active');
+                directoryGrid.classList.remove('list-view');
+                localStorage.setItem('directoryViewMode', 'grid');
+            });
+
+            // List view button click handler
+            listViewBtn.addEventListener('click', function() {
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+                if (orgViewBtn) orgViewBtn.classList.remove('active');
+                directoryGrid.classList.add('list-view');
+                localStorage.setItem('directoryViewMode', 'list');
+            });
+
+            // Org chart view button click handler (if exists)
+            if (orgViewBtn) {
+                orgViewBtn.addEventListener('click', function() {
+                    orgViewBtn.classList.add('active');
+                    gridViewBtn.classList.remove('active');
+                    listViewBtn.classList.remove('active');
+                    // Implementation for org chart view would go here
+                    localStorage.setItem('directoryViewMode', 'org');
+                });
+            }
         }
     }
 
