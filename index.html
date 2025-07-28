@@ -49,14 +49,11 @@
                         <span>Calendar</span>
                         <span class="count">6</span>
                     </li>
-                    <li class="nav-item" id="messenger-nav">
+                    <li class="nav-item messenger-nav-item" data-page="messenger">
                         <i class="fas fa-comment"></i>
                         <span>Messenger</span>
-                        <span class="count">
-                            <span class="dot green-dot" style="display: none;"></span>
-                            <span class="unread-count"></span>
-                            <span class="secondary-count">106</span>
-                        </span>
+                        <span class="count"><span class="dot green-dot"></span>15 <span class="secondary-count">106</span></span>
+                        <span class="message-notification" style="display: none;"></span>
                     </li>
                     <li class="nav-item">
                         <i class="fas fa-check-circle"></i>
@@ -120,19 +117,77 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <div class="search-container">
-                <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Colleagues, projects, anything...">
-                    <i class="fas fa-map-marker-alt"></i>
+            <!-- Default Content -->
+            <div class="default-content">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Colleagues, projects, anything...">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="recent-task">
+                        <span>Recent</span>
+                        <span>Internal task</span>
+                    </div>
+                    <button class="create-new-btn">
+                        <i class="fas fa-plus"></i> Create new
+                    </button>
                 </div>
-                <div class="recent-task">
-                    <span>Recent</span>
-                    <span>Internal task</span>
+            </div>
+
+            <!-- Messenger Content (Initially Hidden) -->
+            <div class="messenger-content" style="display: none;">
+                <div class="messenger-header">
+                    <button class="back-to-feed">
+                        <i class="fas fa-arrow-left"></i> Back to Feed
+                    </button>
+                    <h2>Messenger</h2>
+                    <div class="messenger-actions">
+                        <i class="fas fa-cog"></i>
+                    </div>
                 </div>
-                <button class="create-new-btn">
-                    <i class="fas fa-plus"></i> Create new
-                </button>
+
+                <div class="chat-container">
+                    <div class="chat-sidebar">
+                        <div class="chat-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search contacts...">
+                        </div>
+                        <div class="chat-contacts">
+                            <!-- Chat contacts will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="chat-main">
+                        <div class="chat-header">
+                            <div class="chat-user-info">
+                                <img src="" alt="" class="chat-user-avatar">
+                                <div>
+                                    <p class="chat-user-name"></p>
+                                    <p class="chat-user-status">Online</p>
+                                </div>
+                            </div>
+                            <div class="chat-header-actions">
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-video"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages">
+                            <!-- Messages will be populated dynamically -->
+                        </div>
+
+                        <div class="chat-input-container">
+                            <i class="far fa-smile"></i>
+                            <input type="text" class="chat-input" placeholder="Type a message...">
+                            <i class="fas fa-paperclip"></i>
+                            <button class="send-message-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <section class="stories-section">
@@ -184,21 +239,21 @@
                 </div>
 
                 <div class="feed-container">
-                                    <div class="feed-item large" data-post-id="1">
-                    <div class="feed-header">
-                        <div class="user-info">
-                            <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
-                            <div class="post-info">
-                                <p class="user-name">Zarinka Van Hochland</p>
-                                <p class="post-time">Today, 34 min ago</p>
+                    <div class="feed-item large" data-post-id="post1">
+                        <div class="feed-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Zarinka Van Hochland" class="user-avatar">
+                                <div class="post-info">
+                                    <p class="user-name">Zarinka Van Hochland</p>
+                                    <p class="post-time">Today, 34 min ago</p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="comment-btn" data-count="6"><i class="far fa-comment"></i> <span class="count">6</span></button>
+                                <button class="like-btn" data-count="51"><i class="far fa-heart"></i> <span class="count">51</span></button>
+                                <button class="more-options"><i class="fas fa-ellipsis"></i></button>
                             </div>
                         </div>
-                        <div class="post-actions">
-                            <button class="comment-btn" data-count="6"><i class="far fa-comment"></i> <span class="count">6</span></button>
-                            <button class="like-btn" data-count="51"><i class="far fa-heart"></i> <span class="count">51</span></button>
-                            <button class="more-options"><i class="fas fa-ellipsis"></i></button>
-                        </div>
-                    </div>
                         <div class="feed-content">
                             <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Singapore coworking space" class="feed-image">
                             <h3 class="feed-title">Our new coworking in Singapore</h3>
@@ -206,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item" data-post-id="2">
+                    <div class="feed-item" data-post-id="post2">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Theresa von Castro" class="user-avatar">
@@ -228,7 +283,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item" data-post-id="3">
+                    <div class="feed-item" data-post-id="post3">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="user-avatar">
@@ -253,7 +308,7 @@
                         </div>
                     </div>
 
-                    <div class="feed-item" data-post-id="4">
+                    <div class="feed-item" data-post-id="post4">
                         <div class="feed-header">
                             <div class="user-info">
                                 <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="User" class="user-avatar">
